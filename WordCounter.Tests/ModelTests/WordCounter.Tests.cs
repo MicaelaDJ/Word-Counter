@@ -1,6 +1,19 @@
-[TestMethod]
-public void MehodName_SimpleInputMatchesSimpleWord_Int()
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using WordCounter.Models;
+
+namespace WordCounter.Tests
 {
-  WordCounter testWordCounter = new WordCounter();
-  Assert.
+  [TestClass]
+  public class CounterTests
+  {
+    [TestMethod]
+    public void InputTest_UserInput_True()
+    {
+      // string userInput = "a";
+      // bool result = userInput is string;
+      // Assert.
+    }
+  }
 }
