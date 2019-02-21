@@ -1,6 +1,6 @@
 # _Word Counter_
 
-#### _A program that counts selected words in a given sentence, Created 2/15/19_
+#### _A program that counts selected words in a given sentence, Created 2/15/19 Updated 2/20/19_
 
 #### By _**Micaela Jawor**_
 
@@ -12,6 +12,7 @@ A program (using C#) that gathers both a word and sentence from a user, then che
 
 | Behavior | Example Input | Expected Output |
 | --- | :---: | :---: |
+| User inputs a letter as a string | word = "a" | true |
 | User inputs a single letter string as the word and a single letter as the sentence, and the program outputs 1 match | word = "a" and sentence = "a" | 1 |
 | User inputs a single letter string as the word and multiple letters as the sentence, and the program outputs 2 matches | word = "a" and sentence = "a a" | 2 |
 | User inputs the string "hey" as the word and a sentence containing multiple instances of the word "hey", and the program outputs 2 matches | word = "hey" and sentence = "hey hey listen" | 2 |
@@ -21,8 +22,10 @@ A program (using C#) that gathers both a word and sentence from a user, then che
 
 * _Please visit the Word Counter repository <a href="https://github.com/MicaelaDJ/Word-Counter">at this link</a>._
 * _Clone repository or download to desktop_
+* _Change into the work directory: $ cd WordCounter.Solution
 * _Open files using IDE (Atom or Visual Code Studio) to view code._
-* _Open index.html using your preferred web browser to preview webpage._
+* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe._
+* _To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test_
 
 ## Known Bugs
 
