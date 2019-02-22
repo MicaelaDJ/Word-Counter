@@ -1,6 +1,6 @@
 # _Word Counter_
 
-#### _A program that counts selected words in a given sentence, Created 2/15/19 Updated 2/20/19_
+#### _A program that counts selected words in a given sentence, Created 2/15/19 Updated 2/20/19, 2/21/19, 2/22/19_
 
 #### By _**Micaela Jawor**_
 
