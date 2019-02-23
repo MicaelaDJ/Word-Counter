@@ -10,8 +10,8 @@ namespace WordCounter.Controllers
     [HttpGet("/items")]
     public ActionResult Index()
     {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
+      List<Counter> allCounters = Counter.GetAll();
+      return View(allCounters);
     }
 
     [HttpGet("/items/new")]
@@ -23,14 +23,14 @@ namespace WordCounter.Controllers
     [HttpPost("/items")]
     public ActionResult Create(string description)
     {
-      Item myItem = new Item(description);
+      Counter myCounter = new Counter(description);
       return RedirectToAction("Index");
     }
 
     [HttpPost("/items/delete")]
     public ActionResult DeleteAll()
     {
-      Item.ClearAll();
+      Counter.ClearAll();
       return View();
     }
   }
