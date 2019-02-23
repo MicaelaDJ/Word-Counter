@@ -1,13 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
 using WordCounter.Models;
+using System.Collections.Generic;
+using System;
 
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class CounterTests
+  public class CounterTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Counter.ClearAll();
+    }
+    
     [TestMethod]
     public void InputTest_UserWordIsAString_Bool()
     {
