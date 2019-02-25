@@ -21,9 +21,9 @@ namespace WordCounter.Controllers
     }
 
     [HttpPost("/items")]
-    public ActionResult Create(string description)
+    public ActionResult Create(string word, string sentence)
     {
-      Counter myCounter = new Counter(description);
+      Counter myCounter = new Counter(word, sentence);
       return RedirectToAction("Index");
     }
 

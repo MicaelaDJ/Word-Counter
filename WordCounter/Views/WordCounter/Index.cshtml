@@ -11,7 +11,7 @@
 {
   @foreach (Counter item in Model)
   {
-    <li>@item.GetDescription()</li>
+    <li>@item.GetWord() @item.GetSentence() @item.GetNumber()</li>
   }
 }
 

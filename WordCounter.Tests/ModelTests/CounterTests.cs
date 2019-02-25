@@ -13,7 +13,7 @@ namespace WordCounter.Tests
     {
       Counter.ClearAll();
     }
-    
+
     [TestMethod]
     public void InputTest_UserWordIsAString_Bool()
     {
