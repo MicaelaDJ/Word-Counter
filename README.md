@@ -27,7 +27,7 @@ A program (using C#) that gathers both a word and sentence from a user, then che
 * _Clone repository or download to desktop_
 * _Change into the work directory: $ cd WordCounter.Solution
 * _Open files using IDE (Atom or Visual Code Studio) to view code._
-* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;_
+* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs Counter.cs; mono Counter.exe;_
 * _To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test_
 
 * _Open Mac Terminal or Windows Command Prompt._
