@@ -13,15 +13,15 @@ namespace WordCounter.Tests
     public void Create_ReturnsCorrectActionType_RedirectToActionResult()
     {
       WordCounterController controller = new WordCounterController();
-      IActionResult view = controller.Create("There are 2 matches");
+      IActionResult view = controller.Create("word", "sentence");
       Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
     }
 
     [TestMethod]
     public void Create_RedirectsToCorrectAction_Index()
     {
-      ItemsController controller = new ItemsController();
-      RedirectToActionResult actionResult = controller.Create("There are 2 matches") as RedirectToActionResult;
+      WordCounterController controller = new WordCounterController();
+      RedirectToActionResult actionResult = controller.Create("word", "sentence") as RedirectToActionResult;
       string result = actionResult.ActionName;
       Assert.AreEqual(result, "Index");
     }

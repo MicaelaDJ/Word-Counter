@@ -38,7 +38,7 @@ namespace WordCounter.Tests
     public void SplitFunction_FunctionToBreakUpSentence_String()
     {
       string testSentence = "apple bear cat dog elephant frog";
-      Counter counter = new Counter();
+      Counter counter = new Counter("word", "sentence");
       string[] testArray = counter.SplitFunction(testSentence);
       Assert.AreEqual("cat", testArray[2]);
     }
@@ -66,7 +66,7 @@ namespace WordCounter.Tests
     {
       string testWord = "pizza";
       string testSentence = "My pizza making neighbor made me a pizza";
-      Counter counter = new Counter();
+      Counter counter = new Counter("word", "sentence");
       string[] testArray = testSentence.Split();
       int result = counter.FindFunction(testWord, testArray);
       Assert.AreEqual(2, result);
