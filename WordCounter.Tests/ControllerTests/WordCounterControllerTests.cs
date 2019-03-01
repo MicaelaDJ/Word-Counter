@@ -21,7 +21,7 @@ namespace WordCounter.Tests
     public void Create_RedirectsToCorrectAction_Index()
     {
       ItemsController controller = new ItemsController();
-      RedirectToActionResult actionResult = controller.Create("There are 2 matches") as RedirectToActionResrult;
+      RedirectToActionResult actionResult = controller.Create("There are 2 matches") as RedirectToActionResult;
       string result = actionResult.ActionName;
       Assert.AreEqual(result, "Index");
     }

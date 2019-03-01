@@ -1,6 +1,6 @@
 # _Word Counter_
 
-#### _A program that counts selected words in a given sentence, Created 2/15/19 Updated 2/20/19, 2/21/19, 2/22/19_
+#### _A program that counts selected words in a given sentence, Created 2/15/19 Updated 2/20/19, 2/21/19, 2/22/19, 2/28/19_
 
 #### By _**Micaela Jawor**_
 
@@ -20,12 +20,23 @@ A program (using C#) that gathers both a word and sentence from a user, then che
 
 ## Setup/Installation Requirements
 
+* _Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them._
+* _Download Mono and install it._
+
 * _Please visit the Word Counter repository <a href="https://github.com/MicaelaDJ/Word-Counter">at this link</a>._
 * _Clone repository or download to desktop_
 * _Change into the work directory: $ cd WordCounter.Solution
 * _Open files using IDE (Atom or Visual Code Studio) to view code._
-* _To run the program, first navigate to the location of the WordCounter folder then compile and execute: $ mcs Program.cs Models/Counter.cs; mono Program.exe._
+* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;_
 * _To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test_
+
+* _Open Mac Terminal or Windows Command Prompt._
+* _Type "cd WordCounter.Solution" and press enter to go to the solution directory._
+* _Type "cd WordCounter" and press enter to go to the application directory._
+* _Type "dotnet restore" and press enter_
+* _Type "dotnet build" and press enter_
+* _Type "dotnet run" and press enter_
+* _Open a web browser and go to http://localhost:5000/_
 
 ## Known Bugs
 
